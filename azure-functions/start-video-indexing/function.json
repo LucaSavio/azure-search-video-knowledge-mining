@@ -2,9 +2,11 @@
   "scriptFile": "__init__.py",
   "bindings": [
     {
-      "type": "eventGridTrigger",
-      "name": "event",
-      "direction": "in"
+      "name": "myblob",
+      "type": "blobTrigger",
+      "direction": "in",
+      "path": "video-knowledge-mining-drop/{name}",
+      "connection": "videoknowledgemining_STORAGE"
     }
   ]
 }
